@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@media print {
+    body {
+        color: #333;
+    }
+
+    p {
+        color: #333;
+    }
+
+    h1 {
+        background: #fff;
+        color: #333;
+    }
+
+    table thead th {
+        background: #fff;
+        color: #333;
+    }
+
+    table tbody th {
+        background: #fff;
+        color: #333;
+    }
+}
+
+@charset "utf-8";
+/* CSS Document */
+/* 2020 OCCC Website */
+/* Color Glossary for easy changing of colors later ------------------------------------------------ Teal and Grey color theme: Header Teal: #007795 Light grey: #cccccc Text: #222222 Table row stripe: #f4f4f4 */
+/* Modified by Rondi Schei on 4/14/2017. Change font, h1, h2, h3, h4, a: hover, a:visited, div.note h2, div.note h3, div#footer, div.note, div.box, figcaption, p.caption, table tr:nth-child(2n+1)*/
+/* ------- HTML5 display-role reset for older browsers ------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+/* ------- Global HTML Styles ------- */
+
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: "Lato", sans-serif;
+    color: #4d4d4d;
+    vertical-align: baseline;
+    background-color: #fff;
+}
+
+body {
+    margin: auto;
+    display: block;
+    width: 92%;
+    max-width: 1280px;
+    min-width: 300px;
+    background-color: #fff;
+    padding-left: 1em;
+    padding-right: 1em;
+    /* [disabled]border-top: 2px solid #007795; */
+}
+
+hr {
+    color: #333333;
+    background-color: #333;
+    clear: both;
+}
+
+img {
+    padding: 6px;
+    border-radius: 5px;
+    border: 0px solid #cccccc;
+    -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 5px;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+math {
+}
+/* ------- Links and Text ------- */
+
+a:link {
+    color: #006fbf;
+}
+
+a:hover {
+    color: #1c5295;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+ul {
+    overflow: hidden;
+    line-height: 1.4em;
+}
+
+ol {
+    overflow: hidden;
+    line-height: 1.4em;
+}
+
+ol.footnotes {
+    font-size: smaller;
+}
+
+li {
+    font-size: 1.15em;
+    padding: 5px;
+}
+
+li li {
+    font-size: 100%;
+}
+
+dl {
+}
+
+dt {
+}
+
+dd {
+}
+
+p {
+    font-size: 1.15em;
+    line-height: 1.3em;
+}
+
+blockquote {
+    background: url(../images/quote.png) no-repeat;
+    padding-left: 75px;
+    font-style: italic;
+    min-height: 60px;
+}
+
+pre {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #fefefe;
+    border: 1px solid #222222;
+    padding: 20px;
+}
+
+address {
+}
+
+sub {
+}
+
+sup {
+}
+
+cite {
+    font-style: italic;
+}
+
+figcaption, p.caption {
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    padding-bottom: 5px;
+    margin-bottom: 1em;
+    width: 80%;
+    border-bottom: 1px solid #70485B;
+    color: #70485B;
+}
+/* ------- Headings ------- */
+
+h1 {
+    color: #FFFFFF;
+    /*text-transform: uppercase; */
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    clear: both;
+    background-color: #008099;
+    border-bottom-width: 8px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCC;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+h2 {
+    clear: both;
+    color: #00667a;
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #007795;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    margin-bottom: 25px;
+}
+
+div.box h2 {
+    color: #333;
+    border: 0;
+    margin: 0;
+    padding: .25em;
+}
+
+h3 {
+    color: #c35322;
+    font-size: 1.6em;
+    font-family: 'Lato', sans-serif;
+    clear: both;
+    padding: 0px;
+    margin: 30px 0px 5px 0px;
+}
+
+div.note h2, div.note h3 {
+    font-size: 1.4em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #6C3804;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    clear: both;
+    color: #008099;
+    font-size: 1.4em;
+    padding: 0px;
+    margin: 25px 0px 0px 0px;
+}
+
+h5 {
+    font-family: 'Lato', sans-serif;
+    clear: both;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: #00667a;
+    padding: 0px;
+    margin: 5px 0px 1px 0px;
+}
+
+h6 {
+    font-family: 'Lato', sans-serif;
+    clear: both;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    color: #c35322;
+    padding: 0px;
+    margin: 0px;
+}
+/* ------- Tables ------- */
+
+table {
+    border-spacing: 0;
+    margin: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+table thead th:first-child {
+    border-radius: 0px 0 0 0;
+}
+
+table thead th:last-child {
+    border-radius: 0 0px 0 0;
+}
+
+table thead th {
+    background-color: #007795;
+    color: #fff;
+    height: 25px;
+    font-size: 1.15em;
+    line-height: 1.3em;
+    padding: 5px 20px;
+}
+
+table tbody th {
+    background-color: #007795;
+    color: #fff;
+    height: 25px;
+    font-size: 1.15em;
+    line-height: 1.0em;
+    padding: 5px 20px;
+    border: 1px solid #e6e6e6;
+}
+
+table thead th:empty {
+    background: transparent;
+    border: 1px solid #e6e6e6;
+}
+
+table caption {
+    font-weight: normal;
+}
+
+table tr:nth-child(2n + 1) {
+    background-color: #EDF7FC;
+    color: #4d4d4d;
+}
+
+table td {
+    padding: 5px 20px;
+    border-collapse: collapse;
+    border: 1px solid #e6e6e6;
+}
+/* ------- Page Structure, Layout classes ------- */
+
+div#content {
+}
+
+header, div#header {
+    /* [disabled]background-color: #00667A; */
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+.center {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+iframe {
+    margin: auto;
+    border: 0;
+}
+
+div.note {
+    background-color: #fff;
+    border-top: 1px solid #c35322;
+    border-bottom: 1px solid #c35322;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 20px;
+    margin-bottom: 1em;
+    clear: both;
+}
+
+div.video {
+    width: 600px;
+    max-width: 100%;
+}
+
+div.multimedia-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+div.multimedia-container iframe, div.multimedia-container object, div.multimedia-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.box {
+    border-radius: 25px;
+    border: 3px solid #cccccc;
+    padding: 20px;
+    margin: 0% 5% 0% 5%;
+    clear: both;
+}
+
+div#footer {
+    color: #00667A;
+    height: 35px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-left: 3%;
+    margin-top: 1em;
+    margin-left: -2em;
+    margin-right: -2em;
+    clear: both;
+    text-align: center;
+    font-style: italic;
+    border-top-width: thin;
+    border-top-style: solid;
+    border-top-color: #007795;
+}
+
+div#footer p {
+    font-size: smaller;
+    color: #00667A;
+}
+
+div#footer a {
+    color: #00667A;
+    font-weight: bold;
+}
+/* ------- Responsive Video ------- */
+
+.youtube-sizer {
+    margin: 0 auto;
+    /* centers it */
+    /*max-width:560px; /* 100% on screens smaller than 560px */
+    width: 50%;
+    /* 50% on all screen sizes */
+}
+
+.youtube-container {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 50%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.youtube-container iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+    .youtube-sizer {
+        width: 100%;
+        /* 100 percent on screens 640px and smaller no matter what the width is above */
+    }
+}
+
