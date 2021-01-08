@@ -137,6 +137,10 @@ p {
     line-height: 1.3em;
 }
 
+.makered {
+    color: red;
+}
+
 blockquote {
     background: url(../images/quote.png) no-repeat;
     padding-left: 75px;
@@ -438,6 +442,7 @@ div#footer a {
     top: 0;
     width: 100%;
 }
+
 
 @media only screen and (max-width: 640px) {
     .youtube-sizer {
