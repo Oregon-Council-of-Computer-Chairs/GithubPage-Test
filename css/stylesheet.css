@@ -137,7 +137,7 @@ p {
     line-height: 1.3em;
 }
 
-.makered {
+.red {
     color: red;
 }
 
@@ -316,11 +316,21 @@ table tr:nth-child(2n + 1) {
     color: #4d4d4d;
 }
 
+table tr.red td {
+    padding: 5px 20px;
+    border-collapse: collapse;
+    border: 1px solid #e6e6e6;
+    align-content: center;
+    color: red;
+}
+
 table td {
     padding: 5px 20px;
     border-collapse: collapse;
     border: 1px solid #e6e6e6;
+    align-content: center;
 }
+
 /* ------- Page Structure, Layout classes ------- */
 
 div#content {
